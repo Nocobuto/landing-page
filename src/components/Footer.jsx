@@ -8,14 +8,14 @@ function Footer() {
       <p>
         Coded with <Icon component={Heart} className=" mb-1.5 "></Icon> by{" "}
         <a
-          href="www.linkedin.com/in/arturo-bracamontes
+  href="https://www.linkedin.com/in/arturo-bracamontes"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="underline underline-offset-2"
+>
+          Arturo Bracamontes
+</a>
 
-"
-          target="_blank"
-          className="underline underline-offset-2"
-        >
-          @fullstackArturo
-        </a>
       </p>
     </div>
   );

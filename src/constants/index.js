@@ -57,7 +57,7 @@ const projects = [
   {
     name: "Aprenidiomas",
     description:
-      "Aprenidiomas is a web-based educational platform focused on language learning, designed to provide a clear, accessible, and well-structured experience for students at different proficiency levels. The project organizes courses by language and level.",
+      "Aprenidiomas is a web-based educational platform focused on language learning, designed to provide a clear, accessible, and well-structured experience for students at different proficiency levels.",
 
     image: smartheart,
     projectLink: "https://aprenidiomas-proyecto-integrador.vercel.app/login#",
