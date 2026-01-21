@@ -12,7 +12,7 @@ const Navbar = () => {
         <div>
           <a href="#" className="text-xl">
             fullstack
-            <span className="font-semibold text-[#915eff]">Rheina</span>
+            <span className="font-semibold text-[#915eff]">Arturo</span>
           </a>
         </div>
         <div className="flex items-center gap-2">
@@ -20,16 +20,12 @@ const Navbar = () => {
             component={DribbleIcon}
             href="https://dribbble.com/frontendRheina"
           /> */}
-          <Icon
-            component={InstagramIcon}
-            href="https://www.instagram.com/fullstackrheina/"
-          />
-
+          
           <Icon
             component={LinkedinIcon}
-            href="https://www.linkedin.com/in/rheinatamara/"
+            href="https://www.linkedin.com/in/arturo-bracamontes/"
           />
-          <Icon component={GithubIcon} href="https://github.com/rheinatamara" />
+          <Icon component={GithubIcon} href="https://github.com/Nocobuto" />
         </div>
       </div>
     </header>

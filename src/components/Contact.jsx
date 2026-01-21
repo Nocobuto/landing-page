@@ -9,6 +9,10 @@ import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
 const Contact = () => {
+  console.log("SERVICE:", import.meta.env.VITE_EMAILJS_SERVICE_ID);
+console.log("TEMPLATE:", import.meta.env.VITE_EMAILJS_TEMPLATE_ID);
+console.log("PUBLIC KEY:", import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
+
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -17,11 +21,13 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
   const [errors, setErrors] = useState({});
   const formRef = useRef();
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
     setErrors({ ...errors, [name]: "" });
   };
+
   const validateForm = () => {
     const newErrors = {};
     if (!form.name.trim()) newErrors.name = "Name is required";
@@ -30,6 +36,7 @@ const Contact = () => {
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validateForm()) {
@@ -42,7 +49,6 @@ const Contact = () => {
             from_name: form.name,
             to_name: "Rheina",
             from_email: form.email,
-            to_email: import.meta.env.VITE_EMAIL_TO,
             message: form.message,
           },
           import.meta.env.VITE_EMAILJS_PUBLIC_KEY
@@ -61,7 +67,6 @@ const Contact = () => {
               transition: Slide,
             });
 
-            // Reset the form
             setForm({
               name: "",
               email: "",
@@ -76,6 +81,7 @@ const Contact = () => {
         );
     }
   };
+
   return (
     <>
       <ToastContainer
@@ -91,9 +97,7 @@ const Contact = () => {
         theme="dark"
         transition={Slide}
       />
-      <div
-        className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
-      >
+      <div className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}>
         <motion.div
           variants={slideIn("left", "tween", 0.2, 1)}
           className="flex-[0.75] p-8 rounded-2xl"
@@ -122,6 +126,7 @@ const Contact = () => {
                 <span className="text-red-500 mt-2 text-xs">{errors.name}</span>
               )}
             </label>
+
             <label className="flex flex-col">
               <span className="text-white font-medium mb-4">Your email</span>
               <input
@@ -133,11 +138,10 @@ const Contact = () => {
                 className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
               />
               {errors.email && (
-                <span className="text-red-500 mt-2 text-xs">
-                  {errors.email}
-                </span>
+                <span className="text-red-500 mt-2 text-xs">{errors.email}</span>
               )}
             </label>
+
             <label className="flex flex-col">
               <span className="text-white font-medium mb-4">Your Message</span>
               <textarea
@@ -149,9 +153,7 @@ const Contact = () => {
                 className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
               />
               {errors.message && (
-                <span className="text-red-500 mt-2 text-xs">
-                  {errors.message}
-                </span>
+                <span className="text-red-500 mt-2 text-xs">{errors.message}</span>
               )}
             </label>
 

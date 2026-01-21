@@ -33,15 +33,13 @@ const Hero = () => {
           {/* Text Container */}
           <div>
             <h1 className="text-4xl font-bold md:text-6xl mt-8 tracking-wide text-white ">
-              Hi! I'm <span className="text-[#915eff]">Rheina</span>
+              Hi! I'm <span className="text-[#915eff]">Arturo</span>
             </h1>
             <h4 className="mt-4 font-normal text-secondary text-xl md:text-2xl">
               Fullstack Developer
             </h4>
             <p className="mt-4 md:text-lg md:px-10 lg:px-0 ">
-              Driven by a passion for technology and problem-solving, I
-              specialize in both frontend and backend development. I turn ideas
-              into full-fledged applications.
+              Passionate about technology and problem-solving, I specialize in frontend and backend development, turning ideas into scalable, well-structured applications.
             </p>
           </div>
 

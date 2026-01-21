@@ -26,90 +26,52 @@ export const navLinks = [
 
 const experiences = [
   {
-    title: "FullStack Developer and Web Designer",
-    company_name: "WhiteBox Indonesia",
+    title: "Administrative management assistant",
+    company_name: "Mexican Navy",
     icon: whitebox,
     iconBg: "#242323",
-    date: "Jan 2021 - Feb 2022",
+    date: "May 2021 - July 2025",
     points: [
-      "Contributed to application and website development with a focus on creating user-friendly interfaces.",
-      "Collaborated on the frontend development of Mercu Buana University's website, demonstrating strong CSS/SCSS skills and supporting backend debugging.",
-      "Designed website and mobile UI/UX for Ichiro Ramen Restaurant, aligning with client specifications to enhance customer experience.",
+      "Maintained simplicity, ease of navigation, and responsive design to accommodate diverse user base",
+      "Ensured the site is accessible to all users with clear text, captions, and a readable font.",
       "Assisted in redesigning existing brand interfaces to improve visual appeal and user engagement.",
     ],
   },
   {
-    title: "Frontend Engineer",
-    company_name: "Prixa.ai",
+    title: "Full Stack Developer",
+    company_name: "Freelance",
     icon: prixa,
     iconBg: "#f3f3f3",
-    date: "March 2022 - Oct 2022",
+    date: "August 2025 - Present",
     points: [
-      "Contributed to the maintenance and development of a doctor-patient online consultation platform, including appointment booking and AI-powered symptom checking.",
-      "Coordinated with the team to debug and resolve issues across Prixa’s products.",
-      "Developed Prixa’s component library using Storybook and other UI frameworks.",
-      "Responsible for maintaining patient data to ensure accuracy and compliance",
+      "Contributed to the maintenance and development of platforms using React, Node.js, and other technologies.",
+      "Coordinated with the team to debug and resolve issues across products.",
+      "Implemented responsive design principles to ensure applications function well on various devices and screen sizes.",
+      "Responsible for maintaining data to ensure accuracy and compliance",
     ],
   },
-  {
-    title: "Freelance UI/UX Designer",
-    company_name: "Publicis Groupe",
-    icon: publicis,
-    iconBg: "#242323",
-    date: "Jan 2023 - Dec 2023",
-    points: [
-      "Maintained simplicity, ease of navigation, and responsive design to accommodate diverse user base",
-      "Utilized Publicis Groupe’s brand colors, fonts, and visual elements for cohesive feel.",
-      "Ensured the site is accessible to all users with clear text, captions, and a readable font.",
-    ],
-  },
+  
 ];
 
 const projects = [
   {
-    name: "SmartHeart",
+    name: "Aprenidiomas",
     description:
-      "An AI-powered dating app that matches users based on their personality traits and interests. Users are instantly connected to their compatible matches, allowing them to chat with each other.",
+      "Aprenidiomas is a web-based educational platform focused on language learning, designed to provide a clear, accessible, and well-structured experience for students at different proficiency levels. The project organizes courses by language and level.",
 
     image: smartheart,
-    projectLink: "https://smartheart-267b8.web.app/",
-    githubLink: "https://github.com/RMT-Team3",
+    projectLink: "https://aprenidiomas-proyecto-integrador.vercel.app/login#",
+    
   },
+ 
   {
-    name: "MockAI",
-    description:
-      "An AI-powered app designed to help users practice job interviews interactively. By using AI, users can simulate various types of interviews based on job positions, industries, or their level of experience.",
-
-    image: mockai,
-    projectLink: "https://mockai-bfb73.web.app/",
-    githubLink: "https://github.com/rheinatamara/MockAI",
-  },
-
-  {
-    name: "Graphy",
-    description:
-      "Full-featured social networking app built using React Native, MongoDB, and Apollo GraphQL, designed to deliver an interactive experience similar to Facebook.",
-
-    image: graphy,
-    projectLink: "https://l1nq.com/yIw8Z",
-    githubLink: "https://github.com/rheinatamara/Graphy",
-  },
-  {
-    name: "Mercu Buana University",
-    description:
-      "I implemented the user interface for the Mercu Buana University's website using React and SCSS, focusing on clean, responsive, and maintainable code that aligned with the provided design.",
-
-    image: mercubuana,
-    projectLink: "https://universitas-mercu-buana.web.app/",
-  },
-  {
-    name: "FullstackRheina",
+    name: "FullstackArturo",
     description:
       "A personal website built with React , ThreeJS and Tailwind, showcasing my portfolio and skills. It features a responsive design and smooth animations, providing an engaging user experience.",
 
     image: personal,
-    projectLink: "https://rheina.site",
-    githubLink: "https://github.com/rheinatamara/fullstackRheina",
+    projectLink: "",
+    
   },
 ];
 

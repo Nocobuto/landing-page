@@ -8,11 +8,13 @@ function Footer() {
       <p>
         Coded with <Icon component={Heart} className=" mb-1.5 "></Icon> by{" "}
         <a
-          href="https://www.instagram.com/fullstackrheina"
+          href="www.linkedin.com/in/arturo-bracamontes
+
+"
           target="_blank"
           className="underline underline-offset-2"
         >
-          @fullstackrheina
+          @fullstackArturo
         </a>
       </p>
     </div>
