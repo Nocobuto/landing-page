@@ -9,10 +9,6 @@ import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
 const Contact = () => {
-  console.log("SERVICE:", import.meta.env.VITE_EMAILJS_SERVICE_ID);
-console.log("TEMPLATE:", import.meta.env.VITE_EMAILJS_TEMPLATE_ID);
-console.log("PUBLIC KEY:", import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
-
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -42,15 +38,10 @@ console.log("PUBLIC KEY:", import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
     if (validateForm()) {
       setLoading(true);
       emailjs
-        .send(
+        .sendForm(
           import.meta.env.VITE_EMAILJS_SERVICE_ID,
           import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-          {
-            from_name: form.name,
-            to_name: "Rheina",
-            from_email: form.email,
-            message: form.message,
-          },
+          formRef.current,
           import.meta.env.VITE_EMAILJS_PUBLIC_KEY
         )
         .then(
@@ -66,7 +57,6 @@ console.log("PUBLIC KEY:", import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
               theme: "dark",
               transition: Slide,
             });
-
             setForm({
               name: "",
               email: "",
@@ -75,8 +65,17 @@ console.log("PUBLIC KEY:", import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
           },
           (error) => {
             setLoading(false);
-            console.log(error);
-            alert("Something went wrong");
+            console.log("Error EmailJS:", error);
+            toast.error("Something went wrong. Please try again.", {
+              position: "top-center",
+              autoClose: 5000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              theme: "dark",
+              transition: Slide,
+            });
           }
         );
     }

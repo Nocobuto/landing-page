@@ -73,6 +73,36 @@ const projects = [
     projectLink: "",
     
   },
+
+  {
+    name: " REST API with JWT Auth ",
+    description:
+      "REST API with JWT authentication, user roles, product CRUD and Swagger documentation. Deployed on Railway with PostgreSQL database, providing secure and efficient backend services for web applications.",
+
+    image: graphy,
+    projectLink: "https://api-rest-production-44e6.up.railway.app/api-docs",
+    
+  },
+
+  {
+    name: "URL Shortener ",
+    description:
+      "Full-stack application for creating short, trackable URLs with custom aliases. Features serverless API, real-time analytics, and responsive design. Deployed on Vercel with $0 operational cost.",
+
+    image: mercubuana,
+    projectLink: "https://agb1.vercel.app/",
+    
+  },
+
+  {
+    name: " Neon Invaders — Web Game ",
+    description:
+      "A modern Space Invaders remake built with Phaser.js and vanilla JavaScript, featuring progressive difficulty, power-up systems, 4 enemy types with unique behaviors, and fully responsive design with adaptive controls for mobile and desktop.",
+
+    image: carrent,
+    projectLink: "https://space-invaders-pro.vercel.app/",
+    
+  },
 ];
 
 export { experiences, projects };
