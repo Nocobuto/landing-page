@@ -71,7 +71,7 @@ const projects = [
   {
     name: "Neon Invaders — Web Game",
     description:
-      "A modern Space Invaders remake built with Phaser.js and vanilla JavaScript, featuring progressive difficulty, power-up systems, 4 enemy types with unique behaviors, and fully responsive design with adaptive controls for mobile and desktop.",
+      "A modern Space Invaders remake built with Phaser.js and vanilla JavaScript, featuring progressive difficulty, power-up systems, 4 enemy types with unique behaviors, and fully responsive design.",
     image: space_invaders,
     projectLink: "https://space-invaders-pro.vercel.app/",
   },
