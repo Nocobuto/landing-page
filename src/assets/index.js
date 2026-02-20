@@ -29,6 +29,8 @@ import personal from "./personal.png";
 import smartheart from "./smartheart.png";
 import graphy from "./graphy.png";
 import mercubuana from "./mercubuana.png";
+import space_invaders from "./space_invaders.png";
+
 export {
   logo,
   backend,
@@ -58,4 +60,5 @@ export {
   typescript,
   threejs,
   publicis,
+  space_invaders,
 };
